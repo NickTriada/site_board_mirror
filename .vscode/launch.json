@@ -2,13 +2,16 @@
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    //   "file": "c:\\Users\\NickT\\Documents\\GIT\\site_board_mirror\\index.html"
+    // 
     "version": "0.2.0",
     "configurations": [
         {
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\Users\\NickT\\Documents\\GIT\\site_board_mirror\\index.html"
+            "file": "C:\\Users\\nickt\\Documents\\GIT\\site_board_mirror\\site_board_mirror\\map_v1\\index.html"
+            
         }
     ]
 }

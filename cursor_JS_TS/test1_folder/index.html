@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My widgets</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css">
+  </head>
+    
+
+  <body>
+    <!-- <div id="header_1"></div> -->
+    <div class="widget-container">
+      <div id="clock1"></div>
+      <div id="today_is"></div>
+    </div>
+    <div id="calendar1"></div>
+    <div id="weather1">
+    <form id="weatherForm">
+      <label for="zipCode">Enter ZIP Code:</label>
+      <input type="text" id="zipCode" name="zipCode" required />
+      <button type="submit">Get Weather</button>
+    </form>
+      <div id="weatherOutput"></div>
+    </div>
+    <div id="map"></div>
+
+    <script src="index.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCqLu1rJ2URpt2eE7SigrcFkAnVyzurcG8 &callback=initMap" async defer></script> -->
+    <script>
+        (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+            key: "AIzaSyCqLu1rJ2URpt2eE7SigrcFkAnVyzurcG8",  // Replace with your actual API key
+            v: "weekly"
+        });
+    </script>
+    <script>
+        // Initialize and add the map
+        let map;
+        // Call initMap and handle any errors
+        initMap().catch((error) => {
+            console.error("Error initializing map:", error);
+        });
+    </script>
+  </body>
+</html>
+
+<!-- AIzaSyCqLu1rJ2URpt2eE7SigrcFkAnVyzurcG8
+AIzaSyArM0v0gtkdx4ouWczI0DAUEF3Lx8F5qho -->
+
+<!-- AIzaSyArM0v0gtkdx4ouWczI0DAUEF3Lx8F5qho  googlemaps api key
+2299aff04290332fa767a30e44f0d6a2  openweathermap api key  -->

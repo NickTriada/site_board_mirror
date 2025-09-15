@@ -1,0 +1,121 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #f1f1f1; /* Light text color */
+}
+
+h2 {
+    text-align: center;
+    color: #f1f1f1; /* Light heading color */
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* Chart Grid Container */
+.chart-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 charts per row */
+    gap: 20px; /* Space between grid items */
+    margin: 30px auto;
+    width: 90%; /* Make it flexible */
+}
+
+/* Chart Container Styles */
+.chart-container {
+    padding: 20px;
+    background-color: #1f1f1f; /* Darker background for the chart containers */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Timestamp Styles */
+.timestamp {
+    text-align: center;
+    color: #ddd; /* Slightly lighter text for timestamps */
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* For canvas elements to ensure they fill their containers */
+canvas {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    /* For medium-sized screens, reduce number of charts per row */
+    .chart-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 charts per row */
+    }
+}
+
+@media (max-width: 768px) {
+    /* For smaller screens, display 1 chart per row */
+    .chart-grid {
+        grid-template-columns: 1fr; /* 1 chart per row */
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .chart-container {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+div[id$="Timestamp"] {
+    text-align: center;
+    color: #666; /* More subtle dark grey color */
+    font-size: 12px; /* Smaller font size */
+    margin-top: 5px; /* Reduced top margin to bring it closer to the chart */
+    opacity: 0.8; /* Slightly transparent for added subtlety */
+}
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(300px, 1fr));
+    gap: 20px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.chart-container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 153, 0.3);
+    position: relative;
+}
+
+.chart-title {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00ff99;
+}
+
+.timestamp {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #ccc;
+}
+

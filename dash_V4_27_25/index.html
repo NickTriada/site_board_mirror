@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Charts Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon"></script>
+</head>
+<body>
+    <h1>Stock Charts Dashboard</h1>
+
+    <div class="grid-container">
+        <div class="chart-container">
+            <div class="chart-title" id="dowTitle">DOW: now $...</div>
+            <canvas id="dowChart"></canvas>
+            <div class="timestamp" id="dowTimestamp">Last updated: Loading...</div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-title" id="nasdaqTitle">NASDAQ: now $...</div>
+            <canvas id="nasdaqChart"></canvas>
+            <div class="timestamp" id="nasdaqTimestamp">Last updated: Loading...</div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-title" id="sp500Title">S&P500: now $...</div>
+            <canvas id="sp500Chart"></canvas>
+            <div class="timestamp" id="sp500Timestamp">Last updated: Loading...</div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-title" id="teslaTitle">TESLA: now $...</div>
+            <canvas id="teslaChart"></canvas>
+            <div class="timestamp" id="teslaTimestamp">Last updated: Loading...</div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
